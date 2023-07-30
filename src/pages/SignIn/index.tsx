@@ -1,9 +1,9 @@
 import React from "react";
 
-const SigIn: React.FC = () => {
+const SignIn: React.FC = () => {
     return (
             <h1>SigIn</h1>
     )
 }
 
-export default SigIn
+export default SignIn
