@@ -1,19 +1,22 @@
-import React from "react";
-import { ThemeProvider } from "styled-components"
+import React from "react"
+import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 
 import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
 import dark from "./styles/themes/dark";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import light from "./styles/themes/light";
 
 const App: React.FC = () => {
-    return (
-            <ThemeProvider theme={dark}>
-                <GlobalStyles/>
-                <Layout/>
-            </ThemeProvider>
-    )
+  return (
+    <>
+      <ThemeProvider theme={dark}>
+        <GlobalStyles />
+        <Layout>
+          <Dashboard />
+        </Layout>
+      </ThemeProvider>
+    </>
+  );
 }
 
-export default App
+export default App;

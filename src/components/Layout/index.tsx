@@ -1,17 +1,24 @@
-import React from "react";
 import { GridLayout } from "./styles";
 
-import MainHeader from "../MainHeader";
 import Aside from "../Aside";
+
+import MainHeader from "../MainHeader";
+
 import Content from "../Content";
 
-const Layout: React.FC = () => {
+interface ChildrenProps {
+    children?: React.ReactNode
+}
+
+const Layout: React.FC = ({children} : ChildrenProps) => {
     return (
-            <GridLayout>
-                <MainHeader/>
-                <Aside/>
-                <Content/>
-            </GridLayout>
+        <GridLayout>
+            <MainHeader/>
+            <Aside/>
+            <Content>
+                {children}
+            </Content>
+        </GridLayout>
     )
 }
 
