@@ -1,7 +1,7 @@
 import Aside from "../Aside";
 import Content from "../Content";
 import MainHeader from "../MainHeader";
-import { GridLayout } from "./styles";
+import { Grid } from "./styles";
 
 interface ChildrenProps {
     children?: React.ReactNode
@@ -9,13 +9,13 @@ interface ChildrenProps {
 
 function Layout({ children } : ChildrenProps){
     return (
-        <GridLayout>
+        <Grid>
             <MainHeader />
             <Content>
                 {children}
             </Content>
             <Aside /> 
-        </GridLayout>
+        </Grid>
     )
 }
 export default Layout

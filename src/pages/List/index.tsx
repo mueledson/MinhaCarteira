@@ -104,13 +104,6 @@ const List: React.FC = () => {
                     subtitle="27/05/2021"
                     amount="R$ 100,00"
                 />
-                <HistoryFinanceCard
-                    cardColor="#313862" 
-                    tagColor="#E44C4E"
-                    title="Conta de Luz"
-                    subtitle="27/05/2021"
-                    amount="R$ 100,00"
-                />
             </Content>
         </Container>
     )

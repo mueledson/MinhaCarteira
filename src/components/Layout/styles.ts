@@ -7,7 +7,7 @@ import styled from "styled-components"
     *   CT = Content
 */
 
-export const GridLayout = styled.div`
+export const Grid = styled.div`
     display: grid;
     grid-template-columns: 250px auto;
     grid-template-rows   : 70px auto;
