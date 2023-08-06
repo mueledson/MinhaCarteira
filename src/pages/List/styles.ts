@@ -4,7 +4,7 @@ export const Container = styled.div``
 
 export const Content = styled.div``
 
-export const Filterns = styled.div`
+export const Filters = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
