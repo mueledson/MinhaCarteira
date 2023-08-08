@@ -8,16 +8,23 @@ import { Container } from "./styles";
 
 const Dashboard: React.FC = () => {
 
-    const options = [
-        {value: 'Rodrigo', label: 'Rodrigo'},
-        {value: 'Maria'  , label: 'Maria'},
-        {value: 'Dante'  , label: 'Dante'},
+    const months = [
+        {value: 8, label: 'Agosto'},
+        {value: 9, label: 'Setembro'},
+        {value: 10, label: 'Outubro'}
+    ]
+    
+    const years = [
+        {value: 2023, label: 2023},
+        {value: 2024, label: 2024},
+        {value: 2025, label: 2025}
     ]
 
     return (
         <Container>
             <ContentHeader title="Dashboard" lineColor="#E44C4E">
-                    <SelectInput options={options}/>
+            <SelectInput options={months}/>
+                <SelectInput options={years}/>
             </ContentHeader>
         </Container>
     )
